@@ -13,8 +13,8 @@ let game
 startButton.addEventListener("click", () => {
     if (game && game.isRunning) return
 
-    // const renderer = new SnakeWebRenderer(board, score)
-    const renderer = new SnakeStdRenderer(boardDimension)
+    const renderer = new SnakeWebRenderer(board, score)
+    // const renderer = new SnakeStdRenderer(boardDimension)
     game = new Game(boardDimension, renderer)
     game.start()
 })
